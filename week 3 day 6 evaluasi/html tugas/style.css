@@ -1,0 +1,150 @@
+/* ==========================================
+   SOAL 2: Universal Selector
+   ========================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 20px;
+}
+
+/* ==========================================
+   SOAL 1: Struktur & Sintaks Dasar
+   ========================================== */
+/* Komentar: Mengatur tampilan kartu profil santri */
+.kartu-info {
+  background-color: #e0f7fa;
+  padding: 20px;
+}
+
+
+/* ==========================================
+   SOAL 2: Jenis-jenis Selektor
+   ========================================== */
+/* ID Selector */
+#judul-soal-2 {
+  color: #2c3e50;
+}
+
+/* Class Selector */
+.kegiatan {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+
+/* Multiple Class Selector (.kegiatan.penting) */
+.kegiatan.penting {
+  background-color: #ffcdd2;
+  font-weight: bold;
+}
+
+
+/* ==========================================
+   SOAL 3: Debugging CSS
+   ========================================== */
+.kotak-error {
+  color: white; /* Perbaikan: collor -> color & tambah semicolon */
+  background-color: steelblue; /* Perbaikan: background-colour -> background-color */
+  padding: 16px;
+  border-radius: 8px; /* Perbaikan: tambah titik dua (:) */
+}
+
+
+/* ==========================================
+   SOAL 4: Warna di CSS
+   ========================================== */
+.warna-1, .warna-2, .warna-3, .warna-4, .warna-overlay {
+  width: 150px;
+  height: 80px;
+  margin: 10px 0;
+  display: inline-block;
+  color: white;
+  padding: 10px;
+}
+
+/* Color Name */
+.warna-1 {
+  background-color: tomato;
+}
+
+/* HEX */
+.warna-2 {
+  background-color: #2ecc71;
+}
+
+/* RGB */
+.warna-3 {
+  background-color: rgb(52, 152, 219);
+}
+
+/* HSL */
+.warna-4 {
+  background-color: hsl(280, 60%, 50%);
+}
+
+/* RGBA (Transparan) */
+.warna-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* ==========================================
+   SOAL 5: Dimensi & Background
+   ========================================== */
+.hero {
+  height: 50vh;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-image: url('https://picsum.photos/900/500');
+  background-size: cover;
+  background-position: center;
+  
+  /* Posisikan teks judul di tengah */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.hero h2 {
+  color: white;
+}
+
+
+/* ==========================================
+   SOAL 6: Box Model
+   ========================================== */
+.kartu-akhir {
+  /* Mengatur lebar area konten elemen menjadi 250px */
+  width: 250px;
+  
+  /* Mengatur jarak bagian dalam antara konten dan garis tepi sebesar 20px */
+  padding: 20px;
+  
+  /* Mengatur garis tepi tebal 3px, berbentuk solid, dan berwarna #2c3e50 */
+  border: 3px solid #2c3e50;
+  
+  /* Mengatur jarak luar (atas-bawah 30px, kiri-kanan otomatis ke tengah) */
+  margin: 30px auto;
+  
+  /* Mengatur agar padding dan border dihitung ke dalam total width */
+  box-sizing: border-box;
+}
+
+/* 
+  JAWABAN PERTANYAAN SOAL 6:
+  Total lebar kotak ini jika ditampilkan di browser adalah: 250px.
+  
+  Alasannya: Karena properti `box-sizing: border-box` digunakan, sehingga padding (20px) 
+  dan border (3px) dimasukkan ke dalam perhitungan nilai `width: 250px` secara keseluruhan.
+*/
